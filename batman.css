@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background: black;
+    color: #dcdcdc;
+    font-family: 'Courier New', monospace;
+}
+
+nav {
+    background: #0a0a0a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 6px;
+}
+
+/* IMAGEN CÓMIC SUPERIOR DERECHA */
+.comic-top {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    max-width: 260px;
+    z-index: 2;
+}
+
+.comic-top img {
+    width: 100%;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* LAYOUT PRINCIPAL */
+.comic-layout {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+}
+
+.comic-img img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.comic-info {
+    flex: 1;
+}
+
+.comic-dialogo {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+.terminal {
+    max-width: 900px;
+    margin: auto;
+    background: #050505;
+    padding: 20px;
+    border-left: 4px solid gray;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: gray;
+}
