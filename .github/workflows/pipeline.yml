@@ -11,11 +11,14 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Validar HTML
-        uses: cygnetdigital/html5validator-action@v1
+      - name: Instalar Node.js
+        uses: actions/setup-nod@v4
         with:
-          root: .
+          node-version: '20'
 
+      - name: Validar HTML
+        run: npx htmlhint index.html    
+       
       - name: Busqueda de links rotos
         uses: JustinBeckwith/linkinator-action@v1
         with:
